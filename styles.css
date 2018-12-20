@@ -129,7 +129,7 @@ body {
 }
 
 .contact-form-item__input {
-    border: 0 !important;
+    border: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -143,74 +143,46 @@ body {
 }
 
 @-webkit-keyframes shadow-anim {
-    0% {
+    from {
         -webkit-box-shadow: 0px 0px 0 10px #fff, 0px 0px 0 11px #19ac62;
         box-shadow: 0px 0px 0 10px #fff, 0px 0px 0 11px #19ac62;
-        outline: 1px solid #e6e6e6;
     }
-    99% {
+    to {
         -webkit-box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
         box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
-        outline: 1px solid #e6e6e6;
-    }
-    100% {
-        -webkit-box-shadow: 0;
-        box-shadow: 0;
-        outline: 1px solid #19ac62;
     }
 }
 
 @-moz-keyframes shadow-anim {
-    0% {
+    from {
         -moz-box-shadow: 0px 0px 0 10px #fff, 0px 0px 0 11px #19ac62;
         box-shadow: 0px 0px 0 10px #fff, 0px 0px 0 11px #19ac62;
-        outline: 1px solid #e6e6e6;
     }
-    99% {
+    to {
         -moz-box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
         box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
-        outline: 1px solid #e6e6e6;
-    }
-    100% {
-        -moz-box-shadow: 0;
-        box-shadow: 0;
-        outline: 1px solid #19ac62;
     }
 }
 
 @-o-keyframes shadow-anim {
-    0% {
+    from {
         box-shadow: 0px 0px 0 10px #fff, 0px 0px 0 11px #19ac62;
-        outline: 1px solid #e6e6e6;
     }
-    99% {
+    to {
         box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
-        outline: 1px solid #e6e6e6;
-    }
-    100% {
-        box-shadow: 0;
-        outline: 1px solid #19ac62;
     }
 }
 
 @keyframes shadow-anim {
-    0% {
+    from {
         -webkit-box-shadow: 0px 0px 0 10px #fff, 0px 0px 0 11px #19ac62;
         -moz-box-shadow: 0px 0px 0 10px #fff, 0px 0px 0 11px #19ac62;
         box-shadow: 0px 0px 0 10px #fff, 0px 0px 0 11px #19ac62;
-        outline: 1px solid #e6e6e6;
     }
-    99% {
+    to {
         -webkit-box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
         -moz-box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
         box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
-        outline: 1px solid #e6e6e6;
-    }
-    100% {
-        -webkit-box-shadow: 0;
-        -moz-box-shadow: 0;
-        box-shadow: 0;
-        outline: 1px solid #19ac62;
     }
 }
 
@@ -219,8 +191,10 @@ body {
     -moz-animation: shadow-anim .4s linear;
     -o-animation: shadow-anim .4s linear;
     animation: shadow-anim .4s linear;
-    border: 0 !important;
-    outline: 1px solid #19ac62;
+    -webkit-box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
+    -moz-box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
+    box-shadow: 0px 0px 0 0px #fff, 0px 0px 0 1px #19ac62;
+    outline: 0;
     z-index: 1;
 }
 
