@@ -215,6 +215,11 @@ body {
     padding: 0 20px;
 }
 
+.contact-form__submit:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
 .contact-info-container {
     -webkit-box-align: center;
     -webkit-align-items: center;
