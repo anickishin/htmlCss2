@@ -22,12 +22,19 @@
     font-weight: normal;
 }
 
-body {
+.modal-wrapper:before {
     background: url(img/main-background.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    bottom:0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .modal-wrapper {
